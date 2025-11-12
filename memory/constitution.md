@@ -11,16 +11,19 @@ This project follows the **Adaptive Context-Driven Development (ACDD)** methodol
 ## Core Principles
 
 ### Living Context Model
+
 - Context is multidimensional and evolving, not static
 - Team patterns, architecture decisions, metrics, and preferences are continuously updated
 - Knowledge from past features directly improves future development
 
 ### Continuous Learning
+
 - Every feature contributes to organizational learning
 - Outcomes are systematically analyzed and documented
 - Pattern effectiveness is continuously measured
 
 ### Adaptive Methodology
+
 - Development approach evolves based on evidence
 - Patterns are refined and updated based on usage outcomes
 - Team capabilities and preferences are tracked and leveraged
@@ -30,7 +33,7 @@ This project follows the **Adaptive Context-Driven Development (ACDD)** methodol
 The complete ACDD workflow consists of 9 phases:
 
 1. **Constitution** - Establish project principles and context
-2. **Specify** - Define requirements with context awareness 
+2. **Specify** - Define requirements with context awareness
 3. **Clarify** - Resolve specification ambiguities
 4. **Plan** - Create implementation plan referencing patterns
 5. **Analyze** - Cross-artifact consistency check

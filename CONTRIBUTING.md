@@ -9,16 +9,19 @@ This project and everyone participating in it is governed by our [Code of Conduc
 ## How Can I Contribute?
 
 ### Reporting Bugs
+
 - Use the issue tracker to report bugs
 - Check if the issue already exists before creating a new one
 - Be as specific as possible about the bug
 
 ### Suggesting Enhancements
+
 - Use the issue tracker for feature requests
 - Explain the problem that the feature solves
 - Provide examples of how the feature would be used
 
 ### Pull Requests
+
 1. Fork the repository
 2. Create a branch for your changes
 3. Follow the existing code style

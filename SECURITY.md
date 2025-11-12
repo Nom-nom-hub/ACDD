@@ -8,9 +8,10 @@ We take security seriously. If you believe you have found a security vulnerabili
 
 **Do not report security vulnerabilities through public GitHub issues.**
 
-Instead, please report security vulnerabilities by emailing the ACDD security team at [INSERT SECURITY EMAIL ADDRESS]. 
+Instead, please report security vulnerabilities by emailing the ACDD security team at [INSERT SECURITY EMAIL ADDRESS].
 
 Your report should include:
+
 - A clear description of the vulnerability
 - Steps to reproduce the issue
 - Potential impact of the vulnerability
@@ -25,6 +26,7 @@ Your report should include:
 ### Disclosure Policy
 
 We follow a coordinated disclosure process:
+
 - We will acknowledge your report within 48 hours
 - We will investigate and develop a fix within 30 days
 - We will coordinate with you on the public disclosure timeline

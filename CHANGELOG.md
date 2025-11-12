@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
 - Initial ACDD implementation with 9-phase workflow
 - Constitution, specify, clarify, plan, analyze, tasks, implement phases
 - Unique learn and adapt phases for continuous improvement
@@ -20,18 +21,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Complete documentation suite
 
 ### Changed
+
 - Extended traditional SDD methodology with learning and adaptation phases
 - Enhanced context model with pattern tracking
 - Added evidence-based methodology improvements
 
 ### Deprecated
+
 - Nothing
 
 ### Removed
+
 - Nothing
 
 ### Fixed
+
 - Nothing
 
 ### Security
+
 - Nothing
