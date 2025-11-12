@@ -31,6 +31,7 @@ import zipfile
 import tempfile
 import shutil
 import json
+import termios
 from pathlib import Path
 from typing import Optional, Tuple
 
@@ -274,7 +275,21 @@ class StepTracker:
 
 def get_key():
     """Get a single keypress in a cross-platform way using readchar."""
-    key = readchar.readkey()
+    try:
+        key = readchar.readkey()
+    except (OSError, termios.error):
+        # Fallback for non-TTY environments (e.g., IDE terminals, piped input)
+        console.print("\n[yellow]Using fallback input mode (type 'u' for up, 'd' for down, or 'q' to quit):[/yellow]")
+        key = input("> ").strip().lower()
+        if key == "u":
+            return "up"
+        if key == "d":
+            return "down"
+        if key == "q":
+            raise KeyboardInterrupt
+        if key in ["", "enter"]:
+            return "enter"
+        return key
 
     if key == readchar.key.UP or key == readchar.key.CTRL_P:
         return "up"
