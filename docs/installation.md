@@ -13,13 +13,13 @@ ACDD can be installed and used in several ways to fit your development workflow.
 The recommended way to install ACDD is using UV, a fast Python package manager:
 
 ```bash
-uvx --from git+https://github.com/Nom-nom-hub/acdd-kit.git acdd init <PROJECT_NAME>
+uvx --from git+https://github.com/Nom-nom-hub/ACDD acdd init <PROJECT_NAME>
 ```
 
 Or install globally:
 
 ```bash
-uv tool install acdd-cli --from git+https://github.com/Nom-nom-hub/acdd-kit.git
+uv tool install acdd-cli --from git+https://github.com/Nom-nom-hub/ACDD
 acdd init <PROJECT_NAME>
 ```
 

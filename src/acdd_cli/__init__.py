@@ -646,7 +646,7 @@ def download_template_from_github(
     # In a real implementation, this would point to an actual ACDD template repository
     # For this implementation, we'll use the same approach as spec-kit but with ACDD naming
     repo_owner = "Nom-nom-hub"  # Placeholder - should be actual ACDD organization in real implementation
-    repo_name = "acdd-kit"  # Placeholder - should be actual ACDD repository in real implementation
+    repo_name = "ACDD"  # Placeholder - should be actual ACDD repository in real implementation
     if client is None:
         client = httpx.Client(verify=ssl_context)
 

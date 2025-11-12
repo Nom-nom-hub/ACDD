@@ -14,8 +14,8 @@ Start with our documentation:
 
 For bugs, feature requests, or questions:
 
-- Check the [existing issues](https://github.com/acdd/acdd-kit/issues) first
-- If you don't find your issue, [create a new one](https://github.com/acdd/acdd-kit/issues/new)
+- Check the [existing issues](https://github.com/Nom-nom-hub/ACDD/issues) first
+- If you don't find your issue, [create a new one](https://github.com/Nom-nom-hub/ACDD/issues/new)
 - Be descriptive and include steps to reproduce if reporting a bug
 
 ## Community Support

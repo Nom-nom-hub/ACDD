@@ -42,7 +42,7 @@ uvx --from . acdd init demo-uvx --ai copilot --ignore-agent-tools --script sh
 Test from a local branch:
 
 ```bash
-uvx --from git+https://github.com/Nom-nom-hub/acdd-kit.git@your-feature-branch acdd init demo-branch-test --script ps
+uvx --from git+https://github.com/Nom-nom-hub/ACDD@your-feature-branch acdd init demo-branch-test --script ps
 ```
 
 ## Using Environment Variable

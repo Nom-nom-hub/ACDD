@@ -51,13 +51,13 @@ The unique **Learn** and **Adapt** phases create feedback loops that continuousl
 Install and initialize a new project with ACDD:
 
 ```bash
-uvx --from git+https://github.com/Nom-nom-hub/acdd-kit.git acdd init <PROJECT_NAME>
+uvx --from git+https://github.com/Nom-nom-hub/ACDD acdd init <PROJECT_NAME>
 ```
 
 Or install globally:
 
 ```bash
-uv tool install acdd-cli --from git+https://github.com/Nom-nom-hub/acdd-kit.git
+uv tool install acdd-cli --from git+https://github.com/Nom-nom-hub/ACDD
 acdd init <PROJECT_NAME>
 ```
 

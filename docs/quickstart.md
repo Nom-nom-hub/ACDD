@@ -5,7 +5,7 @@ Get started with ACDD in just a few commands.
 ## 1. Install ACDD CLI
 
 ```bash
-uvx --from git+https://github.com/Nom-nom-hub/acdd-kit.git acdd init my-project --ai claude
+uvx --from git+https://github.com/Nom-nom-hub/ACDD acdd init my-project --ai claude
 ```
 
 This will:
