@@ -94,7 +94,7 @@ generate_commands() {
         body=$(printf '%s\n' "$body" | sed 's/\\/\\\\/g')
         { echo "description = \"$description\""; echo; echo "prompt = \"\"\""; echo "$body"; echo "\"\"\""; } > "$output_dir/acdd.$name.$ext" ;;
       md)
-        echo "$body" > "$output_dir/acdd.$name.$md" ;;
+        echo "$body" > "$output_dir/acdd.$name.$ext" ;;
       prompt.md)
         echo "$body" > "$output_dir/acdd.$name.$ext" ;;
     esac
@@ -130,7 +130,7 @@ build_variant() {
     esac
   fi
 
-  [[ -d templates ]] && { mkdir -p "$ACDD_DIR/templates"; find templates -type f -not -path "templates/commands/*" -not -name "vscode-settings.json" -exec cp --parents {} "$ACDD_DIR"/ \; ; echo "Copied templates -> .acdd/templates"; }
+  [[ -d templates ]] && { mkdir -p "$ACDD_DIR/templates"; find templates -type f -not -path "templates/commands/*" -not -name "vscode-settings.json" | while read -r file; do mkdir -p "$ACDD_DIR/$(dirname "$file")" && cp "$file" "$ACDD_DIR/$file"; done; echo "Copied templates -> .acdd/templates"; }
 
   # NOTE: We substitute {ARGS} internally. Outward tokens differ intentionally:
   #   * Markdown/prompt (claude, copilot, cursor-agent, opencode): $ARGUMENTS
