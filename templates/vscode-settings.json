@@ -1,0 +1,68 @@
+{
+  "acdd.agent.context.files": [
+    ".acdd/context/team-patterns.md",
+    ".acdd/context/architecture-evolution.md",
+    ".acdd/context/velocity-patterns.json",
+    ".acdd/context/team-preferences.json"
+  ],
+  "acdd.agent.context.directories": [
+    ".acdd/patterns/"
+  ],
+  "acdd.agent.context.include": [
+    "**/*.md",
+    "**/*.json",
+    "**/*.py",
+    "**/*.js", 
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.jsx",
+    "**/Dockerfile",
+    "**/docker-compose.yml",
+    "**/*.yml",
+    "**/*.yaml"
+  ],
+  "acdd.agent.context.exclude": [
+    "**/node_modules/**",
+    "**/.git/**", 
+    "**/dist/**",
+    "**/build/**",
+    "**/*.min.js",
+    "**/*.min.css",
+    "**/.acdd/context/metrics/**" 
+  ],
+  "acdd.agent.workflow.phases": [
+    "constitution",
+    "specify", 
+    "clarify",
+    "plan",
+    "analyze",
+    "tasks",
+    "implement",
+    "learn",
+    "adapt"
+  ],
+  "acdd.agent.templates": {
+    "constitution": "templates/constitution.md",
+    "specify": "templates/spec-template.md", 
+    "plan": "templates/plan-template.md",
+    "tasks": "templates/tasks-template.md",
+    "implement": "templates/implement-template.md",
+    "analyze": "templates/analyze-template.md",
+    "learn": "templates/learn-template.md",
+    "adapt": "templates/adapt-template.md",
+    "checklist": "templates/checklist-template.md"
+  },
+  "acdd.agent.metrics.tracking": [
+    "pattern-adoption-rate",
+    "pattern-effectiveness",
+    "team-velocity",
+    "code-quality",
+    "learning-insights",
+    "adaptation-impact"
+  ],
+  "acdd.agent.context.refresh": {
+    "onPhaseChange": true,
+    "onPatternUpdate": true,
+    "onLearningComplete": true
+  }
+}

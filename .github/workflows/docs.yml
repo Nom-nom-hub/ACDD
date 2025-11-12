@@ -1,0 +1,24 @@
+name: Documentation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          pip install markdownlint-cli2
+      - name: Run documentation checks
+        run: |
+          markdownlint-cli2 "**/*.md" --config .markdownlint-cli2.jsonc
