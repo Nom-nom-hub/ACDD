@@ -279,7 +279,9 @@ def get_key():
         key = readchar.readkey()
     except (OSError, termios.error):
         # Fallback for non-TTY environments (e.g., IDE terminals, piped input)
-        console.print("\n[yellow]Using fallback input mode (type 'u' for up, 'd' for down, or 'q' to quit):[/yellow]")
+        console.print(
+            "\n[yellow]Using fallback input mode (type 'u' for up, 'd' for down, or 'q' to quit):[/yellow]"
+        )
         key = input("> ").strip().lower()
         if key == "u":
             return "up"
@@ -661,7 +663,9 @@ def download_template_from_github(
     # In a real implementation, this would point to an actual ACDD template repository
     # For this implementation, we'll use the same approach as spec-kit but with ACDD naming
     repo_owner = "Nom-nom-hub"  # Placeholder - should be actual ACDD organization in real implementation
-    repo_name = "ACDD"  # Placeholder - should be actual ACDD repository in real implementation
+    repo_name = (
+        "ACDD"  # Placeholder - should be actual ACDD repository in real implementation
+    )
     if client is None:
         client = httpx.Client(verify=ssl_context)
 
